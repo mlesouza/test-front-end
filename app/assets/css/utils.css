@@ -1,0 +1,21 @@
+body {
+    background-color: #e7e7e7
+}
+
+.max-width {
+    max-width: 920px;
+    margin: auto;
+    width: calc(100% - 40px);
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
