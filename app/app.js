@@ -20,7 +20,6 @@
 		'ngSanitize',
 		'ui.router',
 		'home',
-	
 	]);
 
 })();

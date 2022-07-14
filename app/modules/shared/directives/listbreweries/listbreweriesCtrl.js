@@ -24,6 +24,8 @@
 		function ListBreweries() {
 			/*jshint validthis: true */
 			var vm = this;
+			vm.title = 'teste'
+			console.log(vm.breweryObj)
 
 		}
 

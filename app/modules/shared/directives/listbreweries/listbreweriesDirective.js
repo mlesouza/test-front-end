@@ -18,7 +18,9 @@
 			var directive = {
 				restrict: 'EA',
 				controller: 'ListBreweriesCtrl',
-				
+				scope: {
+					brewery: "@"
+				},
 				templateUrl:'app/modules/shared/directives/listbreweries/listbreweries.html',
 				
 			}
