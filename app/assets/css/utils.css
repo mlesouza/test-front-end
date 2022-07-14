@@ -1,11 +1,24 @@
-body {
-    background-color: #e7e7e7
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.max-width {
-    max-width: 920px;
-    margin: auto;
-    width: calc(100% - 40px);
+
+
+.background {
+    background-color: white;
+}
+
+.width-100 { 
+    width: 100%;
+}
+
+.main-container {
+    min-height: calc(100vh - 241px);
 }
 
 .flex {

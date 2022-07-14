@@ -1,14 +1,26 @@
-'use strict';
+(function() {
+	'use strict';
 
-// Declare app level module which depends on views, and core components
-angular.module('myApp', [
-  'ngRoute',
-  'home',
-  'list'
+	/**
+	* @ngdoc index
+	* @name app
+	* @description
+	* # app
+	*
+	* Main module of the application.
+	*/
 
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+	angular.module('linx-app', [
+		'ngResource',
+		'ngAria',
+		 'ui.bootstrap',
+		
+		'ngCookies',
+		'ngAnimate',
+		'ngTouch',
+		'ngSanitize',
+		'ui.router',
+		'home',
+	]);
 
-  $routeProvider.otherwise({redirectTo: '/home'});
-}]);
+})();

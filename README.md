@@ -2,7 +2,7 @@
 
 ### Informações
 
-Para facilitar a criação desta aplicação de teste foi utilizada o scaffolding [angular-seed][angularseed].
+Para facilitar a criação desta aplicação de teste foi utilizada o scaffolding [generator-angm](https://github.com/newaeonweb/generator-angm).
 
 ### Como Rodar o projeto.
 
@@ -50,5 +50,4 @@ A solução consiste em duas páginas:
 
 
 
-[angularseed]: https://github.com/angular/angular-seed
 

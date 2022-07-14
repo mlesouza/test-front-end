@@ -1,0 +1,9 @@
+{
+  "generator-angm": {
+    "appName": "linx-app",
+    "angularCookies": true,
+    "angularAnimate": true,
+    "angularSanitize": true,
+    "angularBootstrap": true
+  }
+}
