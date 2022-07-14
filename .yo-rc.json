@@ -4,6 +4,12 @@
     "angularCookies": true,
     "angularAnimate": true,
     "angularSanitize": true,
-    "angularBootstrap": true
+    "angularBootstrap": true,
+    "directives": [
+      {},
+      {
+        "name": "listbreweries"
+      }
+    ]
   }
 }
