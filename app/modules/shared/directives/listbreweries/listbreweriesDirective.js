@@ -19,7 +19,7 @@
 				restrict: 'EA',
 				controller: 'ListBreweriesCtrl',
 				scope: {
-					brewery: "@"
+					brewery: "="
 				},
 				templateUrl:'app/modules/shared/directives/listbreweries/listbreweries.html',
 				

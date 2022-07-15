@@ -1,33 +1,45 @@
 (function () {
-	'use strict';
+	"use strict";
 
 	/**
-	* @ngdoc function
-	* @name app.controller:HomeCtrl
-	* @description
-	* # HomeCtrl
-	* Controller of the app
-	*/
+	 * @ngdoc function
+	 * @name app.controller:HomeCtrl
+	 * @description
+	 * # HomeCtrl
+	 * Controller of the app
+	 */
 
-	angular
-		.module('linx-app')
-		.controller('HomeCtrl', Home);
+	angular.module("linx-app").controller("HomeCtrl", Home);
 
-	Home.$inject = ['homeService'];
+	Home.$inject = ["$scope", "homeService"];
 
 	/*
-	* recommend
-	* Using function declarations
-	* and bindable members up top.
-	*/
+	 * recommend
+	 * Using function declarations
+	 * and bindable members up top.
+	 */
 
-	function Home(homeService) {
-		/*jshint validthis: true */
+	function Home($scope, homeService) {
 		var vm = this;
-		vm.title = "Hello, linx-app!";
-		vm.version = "1.0.0";
-		vm.listFeatures = homeService.getFeaturesList();
+
+		function startVariables() {
+			vm.mockBrewery = {
+				title: "Avondale Brewing Co",
+				location: "201, 41st ST S",
+				badge: "micro"
+			}
+		}
+
+		function startFunctions() {
+
+		}
+
+		function start() {
+			startVariables();
+			startFunctions();
+		}
+
+		start();
 
 	}
-
 })();

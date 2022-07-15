@@ -13,7 +13,7 @@
 		.module('linx-app')
 		.controller('ListBreweriesCtrl', ListBreweries );
 
-		ListBreweries.$inject = [];
+		ListBreweries.$inject = ["$scope"];
 
 		/*
 		* recommend
@@ -21,11 +21,10 @@
 		* and bindable members up top.
 		*/
 
-		function ListBreweries() {
+		function ListBreweries($scope) {
 			/*jshint validthis: true */
-			var vm = this;
-			vm.title = 'teste'
-			console.log(vm.breweryObj)
+			var vm = $scope;
+			console.log(vm.brewery);
 
 		}
 
