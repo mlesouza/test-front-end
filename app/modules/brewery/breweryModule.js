@@ -10,6 +10,6 @@
 	*/
 
 	angular.module('brewery', [
-
+		'ui.router'
 	]);
 })();

@@ -13,7 +13,7 @@ angular.module('linx-app')
 		$stateProvider
 
 			.state('brewery', {
-				url: '/brewery',
+				url: '/brewery/:id',
 				templateUrl: 'app/modules/brewery/brewery.html',
 				controller: 'BreweryCtrl',
 				controllerAs: 'vm'

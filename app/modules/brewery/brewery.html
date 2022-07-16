@@ -1,3 +1,34 @@
 <div ng-controller="BreweryCtrl as vm" class="background">
-	Brewery
+	<div class="brewery-back-container">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true" ng-click="vm.go('/')"
+			accesskey="b">Back</span>
+	</div>
+	<section id="brewery-view">
+		<div class="brewery-view background">
+			<h1>
+				{{vm.brewery.name}}
+			</h1>
+			<span>Type: {{vm.brewery.brewery_type}}</span>
+			<br />
+			<span>Street: {{vm.brewery.street}}</span>
+			<br />
+			<span>City: {{vm.brewery.city}}</span>
+			<br />
+			<span>State: {{vm.brewery.state}}</span>
+			<br />
+			<span>Postal Code: {{vm.brewery.postal_code}}</span>
+			<br />
+			<span>Country: {{vm.brewery.country}}</span>
+			<br />
+			<span ng-if="vm.brewery.website_url">Website:
+				<a target="_blank" href="{{vm.brewery.website_url}}">{{vm.brewery.website_url}}</a></span>
+			<br ng-if="vm.brewery.website_url" />
+			<span>Phone: {{vm.brewery.phone}}</span>
+			<br />
+			<span ng-if="vm.brewery.latitude && vm.brewery.longitude">Open in maps: <a href="{{vm.brewery.link}}"
+					target="_blank">{{vm.brewery.latitude}},
+					{{vm.brewery.longitude}}</a></span>
+		</div>
+
+	</section>
 </div>

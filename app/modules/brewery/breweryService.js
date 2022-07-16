@@ -19,7 +19,12 @@
 		var api_url = "https://api.openbrewerydb.org/";
 
 		return {
+			getBrewery: getBrewery
 		};
+
+		function getBrewery(id) {
+			return $http.get(`${api_url}breweries/${id}`);
+		}
 
 
 
