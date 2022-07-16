@@ -1,0 +1,17 @@
+.pagination > .active > a {
+    background-color: #363636!important;
+    border-color: #363636 !important;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: black!important;
+}
+
+.pagination > li.active > a, .pagination > li.active > span {
+    color: white!important;
+}
+
+.pagination > li:not(:last-of-type) > a {
+    margin-right: 10px;
+}
+
