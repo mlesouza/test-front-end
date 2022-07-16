@@ -1,4 +1,4 @@
-(function() {
+(function () {
 	'use strict';
 
 	/**
@@ -13,13 +13,14 @@
 	angular.module('linx-app', [
 		'ngResource',
 		'ngAria',
-		 'ui.bootstrap',
+		'ui.bootstrap',
 		'ngCookies',
 		'ngAnimate',
 		'ngTouch',
 		'ngSanitize',
 		'ui.router',
 		'home',
+		'brewery'
 	]);
 
 })();

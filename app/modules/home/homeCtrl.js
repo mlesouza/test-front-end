@@ -11,7 +11,7 @@
 
 	angular.module("linx-app").controller("HomeCtrl", Home);
 
-	Home.$inject = ["$scope", "homeService"];
+	Home.$inject = ["$scope", "$cacheFactory", "homeService"];
 
 	/*
 	 * recommend
@@ -19,7 +19,7 @@
 	 * and bindable members up top.
 	 */
 
-	function Home($scope, homeService) {
+	function Home($scope, $cacheFactory, homeService) {
 		var vm = this;
 
 		function startVariables() {
@@ -59,6 +59,8 @@
 					value: "closed"
 				},
 			]
+
+			// vm.cache = $cacheFactory('homeCache');
 		}
 
 		function startFunctions() {
@@ -85,6 +87,7 @@
 		function breweriesListError(error) {
 			console.error(error);
 		}
+
 
 		start();
 

@@ -15,7 +15,7 @@
 	<section id="list">
 		<div class="row">
 			<div class="col-md-3 margin-bottom-30 animate-repeat" ng-repeat="brewery in vm.list">
-				<list-breweries brewery="brewery" id="{{brewery.id}}"></list-breweries>
+				<list-breweries brewery="brewery" id="{{brewery.id}}" ng-click="go()"></list-breweries>
 			</div>
 		</div>
 	</section>

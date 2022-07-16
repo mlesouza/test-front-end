@@ -13,7 +13,7 @@
 		.module('linx-app')
 		.controller('ListBreweriesCtrl', ListBreweries);
 
-	ListBreweries.$inject = ["$scope"];
+	ListBreweries.$inject = ["$scope", "$location"];
 
 	/*
 	* recommend
@@ -21,8 +21,27 @@
 	* and bindable members up top.
 	*/
 
-	function ListBreweries($scope) {
+	function ListBreweries($scope, $localtion) {
 		/*jshint validthis: true */
+
+		function startVariables() {
+		}
+
+		function startFunctions() {
+			$scope.go = go;
+		}
+
+		function start() {
+			startVariables();
+			startFunctions();
+		}
+
+		function go(path) {
+			console.log(path);
+			$localtion.path(path);
+		}
+
+		start();
 	}
 
 })();
