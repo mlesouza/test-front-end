@@ -37,6 +37,15 @@
 		function start() {
 			startVariables();
 			startFunctions();
+			getBreweriesList(1, 20);
+		}
+
+		function getBreweriesList(page, numberPerPage) {
+			homeService.getBreweriesList(page, numberPerPage).then(breweriesList);
+		}
+
+		function breweriesList(response) {
+			console.log(response);
 		}
 
 		start();
