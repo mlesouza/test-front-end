@@ -7,7 +7,9 @@
 	box-sizing: border-box;
 }
 
-
+body {
+    font-family: 'Open Sans' 'Sans-serif'!important;
+}
 
 .background {
     background-color: white;

@@ -1,4 +1,4 @@
-(function() {
+(function () {
 	'use strict';
 
 	/**
@@ -11,21 +11,18 @@
 
 	angular
 		.module('linx-app')
-		.controller('ListBreweriesCtrl', ListBreweries );
+		.controller('ListBreweriesCtrl', ListBreweries);
 
-		ListBreweries.$inject = ["$scope"];
+	ListBreweries.$inject = ["$scope"];
 
-		/*
-		* recommend
-		* Using function declarations
-		* and bindable members up top.
-		*/
+	/*
+	* recommend
+	* Using function declarations
+	* and bindable members up top.
+	*/
 
-		function ListBreweries($scope) {
-			/*jshint validthis: true */
-			var vm = $scope;
-			console.log(vm.brewery);
-
-		}
+	function ListBreweries($scope) {
+		/*jshint validthis: true */
+	}
 
 })();

@@ -2,6 +2,10 @@
     -webkit-box-shadow: 0px 0px 5px 0px rgba(219, 219, 219, 1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(219, 219, 219, 1);
     box-shadow: 0px 0px 5px 0px rgba(219, 219, 219, 1);
+
+    min-height: 250px;
+    max-height: 250px;
+    position: relative;
 }
 
 .card-header {
@@ -10,16 +14,27 @@
 
 .card-header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .card-body {
     padding: 15px;
+    min-height: 150px;
+}
+
+.card-body span {
+    font-size: 12px;
+    color: rgb(94, 94, 94);
 }
 
 .card-footer {
     padding: 5px 15px;
     border-top: 1px solid rgba(219, 219, 219, 1);
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .card-badge {
@@ -27,22 +42,40 @@
     padding: 3px 6px;
     color: white;
     border-radius: 6px;
+    background-color: #e90aa6;
 }
 
-.green {
+.micro {
     background-color: #00D1B2;
 }
 
-.black {
+.contract {
     background-color: #383838;
 }
 
-.yellow {
+.brewpub {
     background-color: #FFDD57;
     color: #383838;
 
 }
 
-.blue {
+.regional {
     background-color: #568CE2;
 }
+
+.nano {
+    background-color: #7b56e2;
+}
+
+.large {
+    background-color: #e29556;
+}
+
+.planning {
+    background-color: #10c4d1;
+}
+
+.closed {
+    background-color: #ec4218;
+}
+

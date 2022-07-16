@@ -1,15 +1,23 @@
 <div class="background card">
     <div class="card-header">
-        <h1>{{brewery.title}}</h1>
+        <h1>{{brewery.name}}</h1>
     </div>
     <div class="card-body">
         <span>
-            {{brewery.location}}
+            {{brewery.street}}
+        </span>
+        <br ng-if="brewery.street" />
+        <span>
+            {{brewery.city}} {{brewery.state}} - {{brewery.postal_code}}
+        </span>
+        <br ng-if="brewery.city || brewery.state || brewery.postal_code" />
+        <span>
+            {{brewery.country}}
         </span>
     </div>
     <div class="card-footer">
-        <span class="card-badge green">
-            {{brewery.badge}}
+        <span class="card-badge {{brewery.brewery_type}}">
+            {{brewery.brewery_type}}
         </span>
     </div>
 </div>

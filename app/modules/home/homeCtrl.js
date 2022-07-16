@@ -23,15 +23,12 @@
 		var vm = this;
 
 		function startVariables() {
-			vm.mockBrewery = {
-				title: "Avondale Brewing Co",
-				location: "201, 41st ST S",
-				badge: "micro"
-			}
+			vm.currentPage = 1;
+			vm.list = [];
 		}
 
 		function startFunctions() {
-
+			vm.getBreweriesList = getBreweriesList;
 		}
 
 		function start() {
@@ -41,11 +38,19 @@
 		}
 
 		function getBreweriesList(page, numberPerPage) {
-			homeService.getBreweriesList(page, numberPerPage).then(breweriesList);
+			vm.currentPage = page;
+			homeService.getBreweriesList(page, numberPerPage)
+				.then(breweriesList)
+				.catch(breweriesListError);
 		}
 
 		function breweriesList(response) {
-			console.log(response);
+			vm.list = response.data;
+			console.log(vm.list);
+		}
+
+		function breweriesListError(error) {
+			console.error(error);
 		}
 
 		start();
