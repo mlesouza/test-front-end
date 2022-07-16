@@ -22,8 +22,9 @@
 			getBreweriesList: getBreweriesList
 		};
 
-		function getBreweriesList(page, numberPerPage) {
-			return $http.get(api_url+"/breweries?page="+page+"&per_page="+numberPerPage);
+		function getBreweriesList(page, numberPerPage, by_type) {
+			return $http.get(`${api_url}breweries?${by_type ? "by_type=" + by_type : ``}&page=${page}&per_page=${numberPerPage}`);
+
 		}
 
 	}

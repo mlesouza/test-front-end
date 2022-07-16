@@ -6,6 +6,7 @@
     min-height: 250px;
     max-height: 250px;
     position: relative;
+    cursor: pointer;
 }
 
 .card-header {
@@ -43,6 +44,14 @@
     color: white;
     border-radius: 6px;
     background-color: #e90aa6;
+}
+
+
+@media (max-width: 991px) {
+    .card {
+        min-height: 200px;
+        max-height: 200px;
+    }
 }
 
 .micro {
