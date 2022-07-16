@@ -1,0 +1,16 @@
+.filter {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.filter label {
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.filter select.form-control {
+    min-width: 120px;
+    height: 30px;
+    font-size: 12px;
+}

@@ -1,4 +1,19 @@
 <div ng-controller="HomeCtrl as vm" class="background">
+	<div class="filter">
+		<form class="form-inline">
+			<div class="form-group">
+				<label>Filter: </label>
+				<select class="form-control">
+					<option>micro</option>
+					<option>contract</option>
+					<option>brewpub</option>
+					<option>regional</option>
+				</select>
+			</div>
+		</form>
+	</div>
+
+
 	<div class="row">
 		<div class="col-md-3 margin-bottom-30">
 			<list-breweries brewery="vm.mockBrewery"></list-breweries>
@@ -25,4 +40,5 @@
 			</ul>
 		</nav>
 	</div>
+
 </div>

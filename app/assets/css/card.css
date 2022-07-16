@@ -24,7 +24,24 @@
 
 .card-badge {
     padding: 3px 6px;
-    background-color: rgb(52, 231, 162);
     color: white;
     border-radius: 6px;
+}
+
+.green {
+    background-color: #00D1B2;
+}
+
+.black {
+    background-color: #383838;
+}
+
+.yellow {
+    background-color: #FFDD57;
+    color: #383838;
+
+}
+
+.blue {
+    background-color: #568CE2;
 }
