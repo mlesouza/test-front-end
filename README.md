@@ -26,6 +26,8 @@ Importante para rodar os testes automatizados é necessário o google chrome ins
 ```
  npm run test
 ```
+Para ter acesso a cobertura de testes abra a pasta do projeto na pasta coverage e clique no index.html.
+
 
 #### Critérios de aceite
 

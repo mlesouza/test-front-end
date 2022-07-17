@@ -37,7 +37,6 @@
 		}
 
 		function go(path) {
-			console.log(path);
 			$localtion.path(path);
 		}
 

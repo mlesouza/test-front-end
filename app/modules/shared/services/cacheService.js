@@ -5,7 +5,7 @@
     * @ngdoc function
     * @name app.service:cacheService
     * @description
-    * # homeService
+    * # cacheService
     * Service of the app
     */
     angular.module('cache', [])
