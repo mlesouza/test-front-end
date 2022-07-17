@@ -13,32 +13,36 @@
     "postinstall": "bower install --config.interactive=false"
   },
   "dependencies": {
-    "bower": "~1.8.14",
-    "grunt-cli": "~1.4.3",
-    "glob": "~8.0.3",
     "async": "~3.2.4",
-    "chalk": "~5.0"
+    "bower": "~1.8.14",
+    "chalk": "~5.0",
+    "glob": "~8.0.3",
+    "grunt-cli": "~1.4.3"
   },
   "devDependencies": {
     "grunt": "~1.5.3",
+    "grunt-angular-templates": "^1.2.0",
+    "grunt-concurrent": "^3.0.0",
     "grunt-contrib-clean": "~2.0.1",
     "grunt-contrib-concat": "~2.1.0",
     "grunt-contrib-connect": "~3.0.0",
-    "grunt-concurrent": "^3.0.0",
     "grunt-contrib-jshint": "~3.2.0",
     "grunt-contrib-uglify": "~5.2.2",
     "grunt-contrib-watch": "~1.1.0",
-	"grunt-exec": "^3.0.0",
+    "grunt-exec": "^3.0.0",
     "grunt-injector": "^1.1.0",
-	"grunt-angular-templates": "^1.2.0",
-    "load-grunt-tasks": "^5.1.0",
-    "time-grunt": "^1.4.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.1",
     "karma-coverage": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "^3.0.3",
     "karma-firefox-launcher": "~2.1.2",
-	"karma-spec-reporter": "0.0.34",
+    "karma-htmlfile-reporter": "^0.3.8",
     "karma-jasmine": "~5.1.0",
-    "karma-phantomjs-launcher": "~1.0.4"
+    "karma-jasmine-html-reporter": "^2.0.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-phantomjs-launcher": "~1.0.4",
+    "karma-spec-reporter": "^0.0.34",
+    "load-grunt-tasks": "^5.1.0",
+    "time-grunt": "^1.4.0"
   }
 }

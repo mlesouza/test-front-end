@@ -64,6 +64,8 @@
 		function startFunctions() {
 			vm.getBreweriesList = getBreweriesList;
 			vm.changeType = changeType;
+			vm.breweriesList = breweriesList;
+			vm.breweriesListError = breweriesListError;
 		}
 
 		function start() {

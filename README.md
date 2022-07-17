@@ -20,6 +20,13 @@ Para rodar o projeto é necessário que você tenha o nodeJS instalado em sua m�
  npm start
 ```
 
+### Testes Automatizados
+Importante para rodar os testes automatizados é necessário o google chrome instalado.
+
+```
+ npm run test
+```
+
 #### Critérios de aceite
 
 #### Sobre

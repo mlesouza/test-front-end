@@ -29,6 +29,8 @@
 
 		function startFunctions() {
 			vm.go = go;
+			vm.breweryError = breweryError;
+			vm.brewery = brewery;
 		}
 
 		function start() {
@@ -46,7 +48,6 @@
 		function brewery(response) {
 			vm.brewery = response.data;
 			vm.brewery.link = `https://www.google.com/maps?q=loc:${vm.brewery.latitude},${vm.brewery.longitude}`;
-			console.log(vm.brewery);
 		}
 
 		function breweryError(error) {

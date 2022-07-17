@@ -13,7 +13,6 @@ module.exports = function (config) {
 			'src/bower_components/json3/lib/json3.min.js',
 			'src/bower_components/bootstrap/dist/js/bootstrap.js',
 			'src/bower_components/angular/angular.js',
-			'src/bower_components/angular-aria/angular-aria.js',
 			'src/bower_components/angular-resource/angular-resource.js',
 			'src/bower_components/angular-mocks/angular-mocks.js',
 			'src/bower_components/angular-cookies/angular-cookies.js',
@@ -23,18 +22,25 @@ module.exports = function (config) {
 			'src/bower_components/angular-ui-router/release/angular-ui-router.js',
 			'src/bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
 			'src/bower_components/angular-aria/angular-aria.js',
-			'src/bower_components/angular-material/angular-material.js',
-			'src/bower_components/angular-messages/angular-messages.js',
-			'src/bower_components/angular-material-icons/angular-material-icons.js',
 			'app/app.js',
-			'app/modules/**/**.js',
+			'app/modules/**/*.js',
 			'specs/**/**.spec.js'
 		],
+
+		preprocessors: { 'app/**/*.js': ['coverage'] },
 
 		// Test results reporter to use
 		// Possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
 		//reporters: ['progress'],
-		reporters: ['spec'],
+
+
+		reporters: ['coverage', 'spec', 'mocha', 'kjhtml'],
+
+
+		coverageReporter: {
+			type: 'html',
+			dir: 'coverage/'
+		},
 
 		// Web server port
 		port: 9876,
@@ -57,13 +63,16 @@ module.exports = function (config) {
 		// - Safari (only Mac)
 		// - PhantomJS
 		// - IE (only Windows)
-		browsers: ['Firefox'],
+		browsers: ['Chrome'],
 
 		// If browser does not capture in given timeout [ms], kill it
 		captureTimeout: 60000,
 
 		// Continuous Integration mode
 		// If true, it capture browsers, run tests and exit
-		singleRun: true
+		singleRun: false,
+
+		concurrency: Infinity,
+
 	});
 };
