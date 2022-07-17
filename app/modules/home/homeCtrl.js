@@ -11,7 +11,7 @@
 
 	angular.module("linx-app").controller("HomeCtrl", Home);
 
-	Home.$inject = ["$scope", "$cacheFactory", "homeService"];
+	Home.$inject = ["$scope", "cacheService", "homeService"];
 
 	/*
 	 * recommend
@@ -19,12 +19,12 @@
 	 * and bindable members up top.
 	 */
 
-	function Home($scope, $cacheFactory, homeService) {
+	function Home($scope, cacheService, homeService) {
 		var vm = this;
 
 		function startVariables() {
 			vm.currentPage = 1;
-			vm.type = ""
+			vm.type = cacheService.get("type") || "";
 			vm.list = [];
 			vm.listOfTypes = [
 				{
@@ -58,13 +58,12 @@
 					key: "closed",
 					value: "closed"
 				},
-			]
-
-			// vm.cache = $cacheFactory('homeCache');
+			];
 		}
 
 		function startFunctions() {
 			vm.getBreweriesList = getBreweriesList;
+			vm.changeType = changeType;
 		}
 
 		function start() {
@@ -86,6 +85,11 @@
 
 		function breweriesListError(error) {
 			console.error(error);
+		}
+
+		function changeType() {
+			cacheService.put('type', vm.type);
+			getBreweriesList(1, 20, vm.type)
 		}
 
 

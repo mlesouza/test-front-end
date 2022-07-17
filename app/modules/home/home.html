@@ -3,8 +3,7 @@
 		<form class="form-inline">
 			<div class="form-group">
 				<label for="filter">Filter: </label>
-				<select name="filter" ng-model="vm.type" class="form-control" accesskey="i"
-					ng-change="vm.getBreweriesList(1, 20, vm.type)">
+				<select name="filter" ng-model="vm.type" class="form-control" accesskey="i" ng-change="vm.changeType()">
 					<option value="">all</option>
 					<option ng-repeat="type in vm.listOfTypes" value="{{type.key}}">{{type.value}}</option>
 				</select>

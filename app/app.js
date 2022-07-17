@@ -20,7 +20,8 @@
 		'ngSanitize',
 		'ui.router',
 		'home',
-		'brewery'
+		'brewery',
+		'cache'
 	]);
 
 })();
