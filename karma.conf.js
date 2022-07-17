@@ -27,11 +27,8 @@ module.exports = function (config) {
 			'src/bower_components/angular-messages/angular-messages.js',
 			'src/bower_components/angular-material-icons/angular-material-icons.js',
 			'app/app.js',
-			'app/modules/home/homeModule.js',
-			'app/modules/home/homeCtrl.js',
-			'app/modules/home/homeRoute.js',
-			'app/modules/home/homeService.js',
-			'app/modules/home/home-test.js'
+			'app/modules/**/**.js',
+			'specs/**/**.spec.js'
 		],
 
 		// Test results reporter to use
@@ -60,7 +57,7 @@ module.exports = function (config) {
 		// - Safari (only Mac)
 		// - PhantomJS
 		// - IE (only Windows)
-		browsers: ['PhantomJS'],
+		browsers: ['Firefox'],
 
 		// If browser does not capture in given timeout [ms], kill it
 		captureTimeout: 60000,
